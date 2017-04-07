@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>轮播图</title>
+
+    <style>
+
+     ul{
+      list-style: none;
+      width: 251px;
+      height: 360px;
+     }
+      .box{
+        position: relative;
+        overflow: auto;
+      }
+      .box li{
+        list-style: none;
+      }
+      .box ul li{
+        width: 251px;
+        height: 360px;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <ul>
+        <li style="background:url('./5.jpg') no-repeat">one</li>
+        <li style="background:url('./6.jpg') no-repeat">second</li>
+        <!-- <li style="background:url('./5.jpg') no-repeat">third</li>
+        <li style="background:url('./6.jpg') no-repeat">fourth</li> -->
+      </ul>
+    </div>
+    <script src="./jquery.min.js"></script>
+    <script src="./unslider.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+         $('.box').unslider();
+      });
+    </script>
+  </body>
+</html>
